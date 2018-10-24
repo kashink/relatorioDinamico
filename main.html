@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Calendar</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="js/jscolor.js"></script>
+    <script src="mainjs.js"></script>
+  	<style>
+  	</style>
+  </head>
+  <body>
+    <div id="propriedades" class="divLeft" style="display:none;">
+      <div id="headerToolbar">
+        <p>Propriedades</p><img id='imageClose' src="images/close.png" onclick="closeProp()">
+      </div><br>
+      <div id="editElem">
+      </div><br>
+
+      <span>Text</span>
+      <input id="txtValue"></input><br><br>
+
+      <span>Font size</span>
+      <input id="tamFont"></input><br><br>
+
+      <span>Font Family</span>
+      <input id="fontElem"></input><br><br>
+
+      <span>Color</span>
+      <input id="colorElem"></input>
+      <button id="colorPicker" class="jscolor {valueElement:'chosen-value', onFineChange:'setColor(this)'}"
+      style="height:22px;border-width:1px;">#ffffff</button><br><br>
+
+      <span>Width</span>
+      <input id="widthElem"></input><br><br>
+
+      <span>Image Src</span>
+      <input id="srcImgElem"></input><br><br>
+
+      <span>Z-index</span>
+      <input id="zIndexElem"></input><br><br>
+
+      <span>Border Style</span>
+      <input id="borderStyleElem"></input><br><br>
+
+      <span>Border Width</span>
+      <input id="borderWidthElem"></input><br><br>
+
+      <span>Border Color</span>
+      <input id="borderColorElem"></input>
+      <button id="borderColorPicker" class="jscolor {valueElement:'chosen-value', onFineChange:'setBorderColor(this)'}"
+      style="height:22px;border-width:1px;">#ffffff</button><br><br>
+
+      <span>Border Radius</span>
+      <input id="borderRadiusElem"></input><br><br>
+
+      <span>BG color</span>
+      <input id="bgColorElem"></input>
+      <button id="bgColorPicker" class="jscolor {valueElement:'chosen-value', onFineChange:'setBgColor(this)'}"
+      style="height:22px;border-width:1px;">#ffffff</button><br><br>
+
+      <button onclick="alteraElem()">Confirmar</button>
+    </div>
+    <div id="dragElements" class="divLeft"  ondrop="dropOut(event)" ondragover="allowDrop(event)">
+      <div id="headerToolbar">
+        <p>Toolbar</p>
+      </div>
+
+      <br><h1 id="drag1" class="h1Elem" draggable="true" ondragstart="drag(event)">H1 Text</h1><br>
+
+      <button id="drag2" class="btnElem" draggable="true" ondragstart="drag(event)">Button</button><br><br>
+
+      <input id="drag3" class="iptElem" draggable="true" ondragstart="drag(event)" placeholder="Input"></input><br><br>
+
+      <p id="drag4" class="pElem" draggable="true" ondragstart="drag(event)">p Text</p><br>
+
+      <span id="drag5" class="spanElem" draggable="true" ondragstart="drag(event)">span Text</span><br><br>
+
+      <img id="drag6" class="imgElem" draggable="true" ondragstart="drag(event)"
+      src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX11193704.jpg"
+      style="width: 60px;">
+    </div>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  </div>
+  </body>
+</html>

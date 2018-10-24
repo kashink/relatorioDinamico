@@ -1,0 +1,78 @@
+#div1 {
+    width: 900px;
+    height: 600px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    display: inline-block;
+}
+
+#propriedades {
+    position: absolute;
+    left: 8px;
+}
+
+#dragElements {
+    display: inline-block;
+    float: left;
+}
+
+.divLeft {
+  width: 350px;
+  height: 620px;
+  border: 1px solid #aaaaaa;
+  padding-left: 20px;
+  margin-right: 20px;
+  background: white;
+  overflow: auto;
+}
+
+#imageClose {
+  position: absolute;
+  width: 30px;
+  top: 0px;
+  left: 90%;
+}
+
+#headerToolbar {
+  margin-left: -20px;
+  background: #80808061;
+  margin-top: -18px;
+  height: 30px;
+}
+
+#headerToolbar p {
+  font-size: 18px;
+  padding: 5px;
+}
+
+#editElem {
+  max-height: 100px;
+  max-width: 280px;
+  height: 100px;
+  width: 280px;
+  overflow: hidden;
+}
+
+.h1Elem {
+  margin: 0px;
+}
+
+.btnElem {
+  margin: 0px;
+}
+
+.iptElem {
+  margin: 0px;
+}
+
+.pElem {
+  margin: 0px;
+}
+
+.spanElem {
+  margin: 0px;
+}
+
+.imgElem {
+  margin: 0px;
+}
