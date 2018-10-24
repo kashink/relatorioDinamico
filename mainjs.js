@@ -163,6 +163,7 @@ function rgbToHex(hexColor) {
     return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
 }
 
+//eventos disparados pelos elementos jsColor
 function setBorderColor(picker) {
 	document.getElementById('borderColorElem').value = '#' + picker.toString();
   document.getElementById('borderColorPicker').innerHTML = '#' + picker.toString();
@@ -256,6 +257,7 @@ function drop(ev) {
 function dropOut(ev) {
     ev.preventDefault();
 
+    //deleta elementos de dentro da area de drop
     var data = ev.dataTransfer.getData("text");
     var isClone = data.search('clone');
 
