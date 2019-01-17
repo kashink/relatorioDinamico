@@ -9,6 +9,7 @@
 #propriedades {
     position: absolute;
     left: 8px;
+    width: 100px;
 }
 
 #dragElements {
